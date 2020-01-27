@@ -14,7 +14,13 @@ def load_data():
 
 
 df = load_data()
-st.map(df)
+df_exclude_hospitals = df[df['hospital'] == 0]
+
+if st.checkbox("Include Hospitals", True):
+    st.map(df)
+else:
+    st.map(df_exclude_hospitals)
+
 '''
 Based on updates obtained from MOH. https://www.moh.gov.sg/2019-ncov-wuhan
 '''
