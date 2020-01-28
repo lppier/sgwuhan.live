@@ -4,7 +4,7 @@ import streamlit as st
 '''
 # Wuhan Coronavirus in Singapore
 
-Daily Updates of All Places _Confirmed_ Patients Have Visited, including hospitals
+Daily Updates of All Places _Confirmed_ Patients Have Visited, including hospitals - www.sgwuhan.live
 '''
 
 @st.cache
