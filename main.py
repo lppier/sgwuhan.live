@@ -16,7 +16,7 @@ def load_data():
 df = load_data()
 df_exclude_hospitals = df[df['hospital'] == 0]
 
-if st.checkbox("Include Hospitals", True):
+if st.checkbox("Include Hospitals", False):
     st.map(df)
 else:
     st.map(df_exclude_hospitals)

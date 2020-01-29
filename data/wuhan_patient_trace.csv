@@ -15,3 +15,6 @@ patient,reported_date,location,latitude,longitude,hospital
 6,28/1/20,Pasir Ris Grove (Patient Home),1.371358,103.945245,0
 6,28/1/20,Changi General Hospital,1.340191,103.949613,1
 7,28/1/20,Marina Bay Sands Singapore 10 Bayfront Ave,1.283063,103.857864,0
+8,29/1/20,Lorong Lew Lian (Patient Home),1.350397,103.877308,0
+9,29/1/20,Lorong Lew Lian (Patient Home),1.350397,103.877308,0
+10,29/1/20,Marina South Pier,1.271099,103.863417,0
