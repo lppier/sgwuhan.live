@@ -13,7 +13,7 @@ def load_data():
     return df
 
 
-df = load_data()
+df = load_data().dropna()
 df_exclude_hospitals = df[df['hospital'] == 0]
 
 if st.checkbox("Include Hospitals", False):
