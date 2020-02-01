@@ -32,4 +32,6 @@ patient,reported_date,location,latitude,longitude,hospital
 13,30/1/20,Jewel,1.360269,103.989722,0
 14,31/1/20,Jurong East Street 13,1.337087,103.737305,0
 15,31/1/20,Changi Airport,1.364324,103.991531,0
-16,31/1/20,,,,
+16,31/1/20,Nathan Road (Patient Home),1.296276,103.825773,0
+17,1/2/20,,,,
+18,1/2/20,,,,
