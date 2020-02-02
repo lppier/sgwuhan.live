@@ -22,7 +22,7 @@ def load_data():
 df, df_patient_count = load_data()
 df_raw = df
 total_confirmed_so_far = df['patient'].max()
-df = df.dropna()
+df = df.dropna()  # removes those rows that doesn't have data
 df_exclude_hospitals = df[df['hospital'] == 0]
 
 st.write('Daily Updates of All Places ', total_confirmed_so_far,
@@ -32,7 +32,6 @@ if st.checkbox("Include Hospitals", False):
     st.map(df)
 else:
     st.map(df_exclude_hospitals)
-
 
 st.vega_lite_chart(df_patient_count, {
     "mark": {"type": "bar", "color": "maroon"},
@@ -49,7 +48,7 @@ st.vega_lite_chart(df_patient_count, {
         'x': {'field': 'date', 'type': 'temporal'},
         'y': {'field': 'patient_counts', 'type': 'quantitative'},
     },
-})#, use_container_width=True)
+})  # , use_container_width=True)
 
 '''
 Based on updates obtained from MOH. https://www.moh.gov.sg/2019-ncov-wuhan
