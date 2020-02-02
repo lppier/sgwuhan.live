@@ -49,7 +49,7 @@ st.vega_lite_chart(df_patient_count, {
         'x': {'field': 'date', 'type': 'temporal'},
         'y': {'field': 'patient_counts', 'type': 'quantitative'},
     },
-}, use_container_width=True)
+})#, use_container_width=True)
 
 '''
 Based on updates obtained from MOH. https://www.moh.gov.sg/2019-ncov-wuhan
