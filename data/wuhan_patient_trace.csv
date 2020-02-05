@@ -36,9 +36,22 @@ patient,reported_date,location,latitude,longitude,hospital
 17,1/2/20,,,,
 18,1/2/20,Home Suite View Hotel,1.311559,103.878141,0
 19,4/2/20,24 Cavan Road,1.310965,103.861563,0
-19,4/2/20,Jalan Bukit Merah,1.283584,103.819392,0
-20,4/2/20,Hougang Street 61,1.374733,103.886425,0
-21,4/2/20,Jalan Bukit Merah,1.283584,103.819392,0
+19,4/2/20,Jalan Bukit Merah (Patient Home),1.283584,103.819392,0
+20,4/2/20,Hougang Street 61(Patient Home),1.374733,103.886425,0
+21,4/2/20,Jalan Bukit Merah (Patient Home),1.283584,103.819392,0
 22,4/2/20,,,,
 23,4/2/20,,,,
-24,4/2/20,24 Cavan Road,1.310965,103.861563,0
+24,4/2/20,24 Cavan Road (Yong Thai Hang),1.310965,103.861563,0
+24,4/2/20,Buangkok Green (Patient Home),1.379388,103.88271,0
+24,4/2/20,Jalan Besar,1.308536,103.857328,0
+24,4/2/20,Hougang Polyclinic,1.369969,103.889325,1
+24,4/2/20,14 Hamilton Road,1.311274,103.860891,0
+24,4/2/20,2 Havelock Road,1.287207,103.845214,0
+24,4/2/20,25 Scotts Road,1.307418,103.832404,0
+24,4/2/20,1 Pasir Ris Close,1.377024,103.954454,0
+25,5/2/20,Buangkok Green (Patient Home),1.379388,103.88271,0
+25,5/2/20,20 Harbour Drive,1.283208,103.779428,0
+25,5/2/20,Pasir Panjang Hawker Centre,1.276,103.791359,0
+26,5/2/20,,,,
+27,5/2/20,,,,
+28,5/2/20,KK Children and Women Hospital,1.310674,103.846827,1
