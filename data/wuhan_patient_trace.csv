@@ -53,5 +53,10 @@ patient,reported_date,location,latitude,longitude,hospital
 25,5/2/20,20 Harbour Drive,1.283208,103.779428,0
 25,5/2/20,Pasir Panjang Hawker Centre,1.276,103.791359,0
 26,5/2/20,,,,
-27,5/2/20,,,,
+27,5/2/20,Jalan Bukit Merah (Patient Home),1.283584,103.819392,0
+27,5/2/20,Tiong Bahru Plaza,1.286498,103.827162,0
+27,5/2/20,Tiong Bahru Market,1.284789,103.832464,0
+27,5/2/20,Beo Crescent Market and Food Centre,1.288824,103.827374,0
 28,5/2/20,KK Children and Women Hospital,1.310674,103.846827,1
+29,6/2/20,Mount Elizabeth Novena Hospital,1.322279,103.84405,1
+30,6/2/20,Grand Hyatt Singapore,1.306514,103.833345,0
