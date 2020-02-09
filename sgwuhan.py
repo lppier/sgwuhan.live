@@ -38,12 +38,12 @@ date_starting = pd.Timestamp(date_starting)
 df = df[df['reported_date'] >= date_starting]
 df_exclude_hospitals = df_exclude_hospitals[df_exclude_hospitals['reported_date'] >= date_starting]
 
-# st.map(df)
+st.write('Showing only data starting from ', date_starting.strftime('%B %d, %Y'))
+
 if st.checkbox("Include Hospitals", False):
     st.map(df)
 else:
     st.map(df_exclude_hospitals)
-st.write('Showing only data starting from ', date_starting.strftime('%B %d, %Y'))
 st.write(df)
 
 st.vega_lite_chart(df_patient_count, {
