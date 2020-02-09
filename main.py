@@ -1,8 +1,9 @@
 import pandas as pd
 import streamlit as st
+from datetime import datetime, timedelta
 
 '''
-# Wuhan Coronavirus in Singapore
+# Wuhan nCov Coronavirus in Singapore
 '''
 
 
@@ -25,13 +26,25 @@ total_confirmed_so_far = df['patient'].max()
 df = df.dropna()  # removes those rows that doesn't have data
 df_exclude_hospitals = df[df['hospital'] == 0]
 
+begin = df_patient_count.iloc[0]['date']
+end = df_patient_count.iloc[-1]['date']
+max_days = (end - begin).days + 1
 st.write('Daily Updates of All Places ', total_confirmed_so_far,
-         ' _Confirmed_ Patients Have Visited - http://www.sgwuhan.live')
+         ' _Confirmed_ Patients Have Visited - http://www.sgwuhan.live, based on past ', max_days,
+         ' days of updates obtained from MOH. https://www.moh.gov.sg/2019-ncov-wuhan')
+days_to_filter = st.slider('Limit to Locations Reported X Days Ago', 1, max_days, max_days)
+date_starting = datetime.now() - timedelta(days=days_to_filter)
+date_starting = pd.Timestamp(date_starting)
+df = df[df['reported_date'] >= date_starting]
+df_exclude_hospitals = df_exclude_hospitals[df_exclude_hospitals['reported_date'] >= date_starting]
 
+# st.map(df)
 if st.checkbox("Include Hospitals", False):
     st.map(df)
 else:
     st.map(df_exclude_hospitals)
+
+st.write(df)
 
 st.vega_lite_chart(df_patient_count, {
     "mark": {"type": "bar", "color": "maroon"},
@@ -50,10 +63,6 @@ st.vega_lite_chart(df_patient_count, {
     },
 })  # , use_container_width=True)
 
-'''
-Based on updates obtained from MOH. https://www.moh.gov.sg/2019-ncov-wuhan
-'''
-if st.checkbox("Show raw data", False):
-    st.write(df_raw)
+
 
 # st.markdown("Written By Pier Lim")
