@@ -99,3 +99,8 @@ patient,reported_date,location,latitude,longitude,hospital
 42,9/2/20,The Leo Dormitory,1.337337,103.903802,0
 43,9/2/20,Resorts World Sentosa,1.255198,103.821805,0
 43,9/2/20,Fernvale Close,1.394516,103.879982,0
+44,10/2/20,Khoo Teck Puat Hospital,1.424607,103.838157,1
+44,10/2/20,Certis Cisco Centre,1.321792,103.89225,0
+44,10/2/20,F1 Pit Building (Chingay 2020),1.291381,103.863895,0
+44,10/2/20,Sembawang Drive (Approximate),1.45266,103.816956,0
+45,10/2/20,,,,
