@@ -3,7 +3,7 @@ import streamlit as st
 from datetime import date, timedelta
 
 '''
-# Wuhan nCov Coronavirus in Singapore
+# Wuhan COVID-19 Virus in Singapore
 '''
 
 
