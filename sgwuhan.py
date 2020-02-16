@@ -63,6 +63,6 @@ st.vega_lite_chart(df_patient_count, {
     },
 })  # , use_container_width=True)
 
-
+st.write('This is a personal project and has no affiliation with any agency, government or otherwise.')
 
 # st.markdown("Written By Pier Lim")
