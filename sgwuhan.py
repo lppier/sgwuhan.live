@@ -4,7 +4,13 @@ from datetime import date, timedelta
 
 '''
 # Wuhan COVID-19 Virus in Singapore
+Hi, I've seen that MOH has done up a nice Dashboard of their own. https://moh-sla-ncov.maps.arcgis.com/apps/opsdashboard/index.html#/c1e9f1c90db8411cab9f397ca4e2c487
+Hence, I've decided to retire this website. The source code can be found at my github https://github.com/lppier
+Thanks for your support.
+
+**This site will no longer be updated. Please refer to the official MOH Dashboard above.** 
 '''
+
 
 
 @st.cache
